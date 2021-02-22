@@ -19,11 +19,6 @@
     font-style : normal;
 }
 
-body{
-    padding-left : 50px;
-    padding-right : 50px;
-}
-
 body *{
     font-family : 'Raleway';
 }
@@ -221,6 +216,8 @@ nav ul li.active a{
   width : 100%;
   margin-right : auto;
   margin-left : auto;
+  padding-left : 50px;
+  padding-right : 50px;
 }
 
 @media (min-width: 718px) {
