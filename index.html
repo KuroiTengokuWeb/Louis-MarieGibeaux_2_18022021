@@ -1,111 +1,137 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Reservia</title>
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve.">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="asset/css/main.css">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="asset/font/fontawesome-free-5.15.2-web/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/main.css">
+
     <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
-		<header>
-            <nav>
-                <a></a>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <a></a>
-            </nav>
-            <section>
-                <h1></h1>
-                <p></p>
-                <form method="POST" action="#">
-                    <span><i></i></span>
-                    <input type="text" name="" value="">
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <a href="#" id="logo"><img src="asset/img/logo/Reservia@3x.png" alt="Reservia logo"></a>
+             <ul>
+                <li class="active"><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+            <a href="#" id="register">S'inscrire</a>
+        </nav>
+    </header>
+    <!--search & filtre container-->
+    <section class="container">
+        <div id="search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="POST" action="#">
+                <span id="search-bar" >
+                    <a href="#"><span><i class="fas fa-map-marker-alt"></i></span></a>
+                    <input type="text" name="" value="Marseille, France">
                     <button type="submit">Rechercher</button>
-                </form>
-                <div>
-                    <p>Filtres</p>
-                    <div>
-                        <a href=""><span><i></i></span></a>
-                        <a href=""><span><i></i></span></a>
-                        <a href=""><span><i></i></span></a>
-                        <a href=""><span><i></i></span></a>
-                    </div>
-                </div>
-                <div><i></i><p></p></div>
-            </section>
-        </header>
-        <main>
-            <section>
-               <!--Section hebergements-->
-                <section>
-                    <!--Title-->
-                    <h1></h1>
-                    <!--Cards container-->
-                    <div>
-                        <!--Card-->
-                        <div>
-                            <div></div>
-                            <div>
-                                <h2></h2>
-                                <p></p>
-                                <div>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!--./Card-->
-                    </div>
-                    <!-- ./Cards container-->
-                    <a href=""></a>
-                </section>
-                <!-- ./Section hebergements-->
-                <!-- Section populaires-->
-                <aside>
-                    <!--Title-->
-                    <div>
-                        <h1></h1><i></i>
-                    </div>
-                     <!--./Title-->
-                     <!-- Horizontal Card container-->
-                    <div>
-                        <!-- Horizontal Card-->
-                        <div>
-                            <div></div>
-                            <div>
-                                <h2></h2>
-                                <p></p>
-                                <div>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Horizontal Card-->
-                    </div>
-                    <!-- Horizontal Card container-->
-                </aside>
-                <!-- ./Section populaires-->
-            </section>
-            <!--Section Activités-->
+                </span>
+            </form>
+        </div>
+        <div id="filter-container">
+            <p>Filtres</p>
+            <div>
+                <a href="#"><span><i class="fas fa-money-bill-wave"></i></span>Économique</a>
+                <a href="#"><span><i class="fas fa-child"></i></span>Familial</a>
+                <a href="#"><span><i class="fas fa-heart"></i></span>Romantique</a>
+                <a href="#"><span><i class="fas fa-dog"></i></span>Animaux autorisés</a>
+            </div>
+        </div>
+        <div id="info">
+            <span><i class="fas fa-info"></i></span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </section>
+    <!-- ./search & filtre container-->
+
+    <main class="container">
+        <section>
+            <!--Section hebergements-->
             <section>
                 <!--Title-->
                 <h1></h1>
-                <!--Card container-->
+                <!--Cards container-->
                 <div>
-                    <!--Card group-->
+                    <!--Card-->
+                    <div>
+                        <div></div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <div>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                </div>
+                <!-- ./Cards container-->
+                <a href=""></a>
+            </section>
+            <!-- ./Section hebergements-->
+            <!-- Section populaires-->
+            <aside>
+                <!--Title-->
+                <div>
+                    <h1></h1><i></i>
+                </div>
+                <!--./Title-->
+                <!-- Horizontal Card container-->
+                <div>
+                    <!-- Horizontal Card-->
+                    <div>
+                        <div></div>
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <div>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Horizontal Card-->
+                </div>
+                <!-- Horizontal Card container-->
+            </aside>
+            <!-- ./Section populaires-->
+        </section>
+        <!--Section Activités-->
+        <section>
+            <!--Title-->
+            <h1></h1>
+            <!--Card container-->
+            <div>
+                <!--Card group-->
+                <div>
+                    <!--Card-->
+                    <div>
+                        <div></div>
+                        <div>
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <!-- ./Card-->
+                    <!--Small Card group-->
                     <div>
                         <!--Card-->
                         <div>
@@ -115,61 +141,52 @@
                             </div>
                         </div>
                         <!-- ./Card-->
-                        <!--Small Card group-->
+                        <!--Card-->
                         <div>
-                            <!--Card-->
+                            <div></div>
                             <div>
-                                <div></div>
-                                <div>
-                                    <h2></h2>
-                                </div>
+                                <h2></h2>
                             </div>
-                            <!-- ./Card-->
-                            <!--Card-->
-                            <div>
-                                <div></div>
-                                <div>
-                                    <h2></h2>
-                                </div>
-                            </div>
-                            <!-- ./Card-->
                         </div>
-                        <!-- ./Small Card group-->
+                        <!-- ./Card-->
                     </div>
-                    <!-- ./Card group-->
+                    <!-- ./Small Card group-->
                 </div>
-            </section>
-            <!-- ./Section Activités-->
-        </main>
-        <footer>
-            <!--About container-->
-            <div>
-                <p></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <!-- ./Card group-->
             </div>
-            <!-- ./About container-->
-            <!-- Hebergement container-->
-            <div>
-                <p></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <!-- ./Hebergement container-->
-            <!-- Assistance container-->
-            <div>
-                <p></p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <!-- ./Assistance container-->
-        </footer>
-  </body>
+        </section>
+        <!-- ./Section Activités-->
+    </main>
+    <footer class="container">
+        <!--About container-->
+        <div>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- ./About container-->
+        <!-- Hebergement container-->
+        <div>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- ./Hebergement container-->
+        <!-- Assistance container-->
+        <div>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- ./Assistance container-->
+    </footer>
+</body>
+
 </html>
