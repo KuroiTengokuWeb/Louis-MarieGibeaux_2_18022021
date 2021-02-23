@@ -7,9 +7,9 @@
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve.">
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="asset/font/fontawesome-free-5.15.2-web/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="asset/css/main.css">
+    <link rel="stylesheet" type="text/css" href="asset/font/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/main.css">
 
     <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,20 +20,20 @@
     <header class="container">
         <nav>
             <a href="#" id="logo"><img src="asset/img/logo/Reservia@3x.png" alt="Reservia logo"></a>
-             <ul>
+            <ul>
                 <li class="active"><a href="#">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
             </ul>
             <a href="#" id="register">S'inscrire</a>
         </nav>
     </header>
-    <!--search & filtre container-->
+    <!--search & filter container-->
     <section class="container">
         <div id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form method="POST" action="#">
-                <span id="search-bar" >
+                <span id="search-bar">
                     <a href="#"><span><i class="fas fa-map-marker-alt"></i></span></a>
                     <input type="text" name="" value="Marseille, France">
                     <button type="submit">Rechercher</button>
@@ -41,6 +41,7 @@
             </form>
         </div>
         <div id="filter-container">
+            <!-- Changer en filter ?-->
             <p>Filtres</p>
             <div>
                 <a href="#"><span><i class="fas fa-money-bill-wave"></i></span>Économique</a>
@@ -57,103 +58,269 @@
     <!-- ./search & filtre container-->
 
     <main class="container">
-        <section>
+        <section class="main-content">
             <!--Section hebergements-->
-            <section>
+            <section id="hebergements" class="section">
                 <!--Title-->
-                <h1></h1>
+                <h1 class="title">Hébergements à Marseille</h1>
                 <!--Cards container-->
-                <div>
+                <div id="cards-container-h">
                     <!--Card-->
-                    <div>
-                        <div></div>
-                        <div>
-                            <h2></h2>
-                            <p></p>
+                    <div class="cards cards-h">
+                        <div id="cards-background-h1" class="cards-bg"></div>
+                        <div class="card-informations">
                             <div>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
+                                <h2>Auberge la Cannebière</h2>
+                                <p>Nuit à partir de <span class="promotion">25€</span></p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                    <!--Card-->
+                    <div class="cards cards-h">
+                        <div id="cards-background-h2" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Hôtel du port</h2>
+                                <p>Nuit à partir de 52€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                    <!--Card-->
+                    <div class="cards cards-h">
+                        <div id="cards-background-h3" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Hôtel Les mouettes</h2>
+                                <p>Nuit à partir de 76€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                    <!--Card-->
+                    <div class="cards cards-h">
+                        <div id="cards-background-h4" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Hôtel de la mer</h2>
+                                <p>Nuit à partir de 46€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                    <!--Card-->
+                    <div class="cards cards-h">
+                        <div id="cards-background-h5" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Auberge Le Panier</h2>
+                                <p>Nuit à partir de <span class="promotion">23€</span></p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--./Card-->
+                    <!--Card-->
+                    <div class="cards cards-h">
+                        <div id="cards-background-h6" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Hôtel chez Amina</h2>
+                                <p>Nuit à partir de 96€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
                             </div>
                         </div>
                     </div>
                     <!--./Card-->
                 </div>
                 <!-- ./Cards container-->
-                <a href=""></a>
+                <a href="" id="show-more">Afficher plus</a>
             </section>
             <!-- ./Section hebergements-->
             <!-- Section populaires-->
-            <aside>
+            <aside id="populars" class="section">
                 <!--Title-->
-                <div>
-                    <h1></h1><i></i>
+                <div id="populars-title" class="title">
+                    <h1>Les plus populaires</h1><i class="fas fa-chart-line"></i>
                 </div>
                 <!--./Title-->
-                <!-- Horizontal Card container-->
-                <div>
-                    <!-- Horizontal Card-->
-                    <div>
-                        <div></div>
-                        <div>
-                            <h2></h2>
-                            <p></p>
+                <!-- Vertical Card container-->
+                <div id="cards-container-v">
+                    <!-- Vertical Card-->
+                    <div class="cards cards-v">
+                        <div id="cards-background-v1" class="cards-bg-v"></div>
+                        <div class="card-informations">
                             <div>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
+                                <h2>Hôtel Le soleil du matin</h2>
+                                <p>Nuit à partir de 128€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
                             </div>
                         </div>
                     </div>
-                    <!-- Horizontal Card-->
+                    <!-- ./Vertical Card-->
+                    <!-- Vertical Card-->
+                    <div class="cards cards-v">
+                        <div id="cards-background-v2" class="cards-bg-v"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                                <p>Nuit à partir de 71€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Vertical Card-->
+                    <!-- Vertical Card-->
+                    <!-- Vertical Card-->
+                    <div class="cards cards-v">
+                        <div id="cards-background-v3" class="cards-bg-v"></div>
+                        <div class="card-informations">
+                            <div>
+                                <h2>Hôtel Tout bleu et Blanc</h2>
+                                <p>Nuit à partir de 68€</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star blue-star"></i>
+                                <i class="fas fa-star grey-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Vertical Card-->
                 </div>
-                <!-- Horizontal Card container-->
+                <!-- ./Vertical Card container-->
             </aside>
             <!-- ./Section populaires-->
         </section>
         <!--Section Activités-->
-        <section>
-            <!--Title-->
-            <h1></h1>
-            <!--Card container-->
-            <div>
-                <!--Card group-->
-                <div>
-                    <!--Card-->
-                    <div>
-                        <div></div>
-                        <div>
-                            <h2></h2>
-                        </div>
-                    </div>
-                    <!-- ./Card-->
-                    <!--Small Card group-->
-                    <div>
+        <section class="main-content">
+            <section id="activity">
+                <!--Title-->
+                <h1 class="title">Activités à Marseille</h1>
+                <!--Card container-->
+                <div id="cards-container-m">
+                    <!--Card group left-->
+                    <div class="cards-group">
                         <!--Card-->
-                        <div>
-                            <div></div>
-                            <div>
-                                <h2></h2>
+                        <div class="cards cards-m">
+                            <div id="cards-background-ml1" class="cards-bg"></div>
+                            <div class="card-informations">
+                                <h2>Vieux Port</h2>
                             </div>
                         </div>
-                        <!-- ./Card-->
+                        <!--./Card-->
+                        <!--Small Card group-->
+                        <div class="cards-group-lte">
+                            <!--Card-->
+                            <div class="cards cards-m" id="cards-l-lite1">
+                                <div id="cards-background-ml2" class="cards-bg"></div>
+                                <div class="card-informations">
+                                    <h2>Fort de Pomègues</h2>
+                                </div>
+                            </div>
+                            <!--./Card-->
+                            <!--Card-->
+                            <div class="cards cards-m" id="cards-l-lite2">
+                                <div id="cards-background-ml3" class="cards-bg"></div>
+                                <div class="card-informations">
+                                    <h2>Îles du Frioul</h2>
+                                </div>
+                            </div>
+                            <!--./Card-->
+                        </div>
+                        <!-- ./Small Card group-->
+                    </div>
+                    <!-- ./Card group left-->
+                    <!--Card group right-->
+                    <div class="cards-group">
                         <!--Card-->
-                        <div>
-                            <div></div>
-                            <div>
-                                <h2></h2>
+                        <div class="cards cards-m">
+                            <div id="cards-background-mr1" class="cards-bg"></div>
+                            <div class="card-informations">
+                                <h2>Vieux Port</h2>
                             </div>
                         </div>
-                        <!-- ./Card-->
+                        <!--./Card-->
+                        <!--Small Card group-->
+                        <div class="cards-group-lte">
+                            <!--Card-->
+                            <div class="cards cards-m" id="cards-r-lite1">
+                                <div id="cards-background-mr2" class="cards-bg"></div>
+                                <div class="card-informations">
+                                    <h2>Fort de Pomègues</h2>
+                                </div>
+                            </div>
+                            <!--./Card-->
+                            <!--Card-->
+                            <div class="cards cards-m" id="cards-r-lite2">
+                                <div id="cards-background-mr3" class="cards-bg"></div>
+                                <div class="card-informations">
+                                    <h2>Îles du Frioul</h2>
+                                </div>
+                            </div>
+                            <!--./Card-->
+                        </div>
+                        <!-- ./Small Card group-->
                     </div>
-                    <!-- ./Small Card group-->
+                    <!-- ./Card group right-->
                 </div>
-                <!-- ./Card group-->
-            </div>
+                <!-- ./Card container-->
+            </section>
         </section>
         <!-- ./Section Activités-->
     </main>
