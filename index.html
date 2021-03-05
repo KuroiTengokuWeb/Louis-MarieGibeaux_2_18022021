@@ -21,8 +21,8 @@
         <nav>
             <a href="#" id="logo"><img src="asset/img/logo/Reservia@3x.png" alt="Reservia logo"></a>
             <ul>
-                <li class="active"><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li class="active"><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activity">Activités</a></li>
             </ul>
             <a href="#" id="register">S'inscrire</a>
         </nav>
@@ -35,8 +35,11 @@
             <form method="POST" action="#">
                 <span id="search-bar">
                     <a href="#"><span><i class="fas fa-map-marker-alt"></i></span></a>
-                    <input type="text" name="" value="Marseille, France">
-                    <button type="submit">Rechercher</button>
+                    <input type="text" name="" placeholder="Marseille, France">
+                    <button type="submit">
+                        <span>Rechercher</span>
+                        <i class="fas fa-search"></i>
+                    </button>
                 </span>
             </form>
         </div>
@@ -66,7 +69,7 @@
                 <!--Cards container-->
                 <div id="cards-container-h">
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h1" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -81,10 +84,10 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h2" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -99,10 +102,10 @@
                                 <i class="fas fa-star blue-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h3" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -117,10 +120,10 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h4" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -135,10 +138,10 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h5" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -153,10 +156,10 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                     <!--Card-->
-                    <div class="cards cards-h">
+                    <a href="#" class="cards cards-h">
                         <div id="cards-background-h6" class="cards-bg"></div>
                         <div class="card-informations">
                             <div>
@@ -171,7 +174,7 @@
                                 <i class="fas fa-star blue-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--./Card-->
                 </div>
                 <!-- ./Cards container-->
@@ -188,7 +191,7 @@
                 <!-- Vertical Card container-->
                 <div id="cards-container-v">
                     <!-- Vertical Card-->
-                    <div class="cards cards-v">
+                    <a href="#" class="cards cards-v">
                         <div id="cards-background-v1" class="cards-bg-v"></div>
                         <div class="card-informations">
                             <div>
@@ -203,10 +206,10 @@
                                 <i class="fas fa-star blue-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- ./Vertical Card-->
                     <!-- Vertical Card-->
-                    <div class="cards cards-v">
+                    <a href="#" class="cards cards-v">
                         <div id="cards-background-v2" class="cards-bg-v"></div>
                         <div class="card-informations">
                             <div>
@@ -221,11 +224,10 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- ./Vertical Card-->
                     <!-- Vertical Card-->
-                    <!-- Vertical Card-->
-                    <div class="cards cards-v">
+                    <a href="#" class="cards cards-v">
                         <div id="cards-background-v3" class="cards-bg-v"></div>
                         <div class="card-informations">
                             <div>
@@ -240,7 +242,7 @@
                                 <i class="fas fa-star grey-star"></i>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- ./Vertical Card-->
                 </div>
                 <!-- ./Vertical Card container-->
@@ -248,7 +250,7 @@
             <!-- ./Section populaires-->
         </section>
         <!--Section Activités-->
-        <section class="main-content">
+        <section class="main-content section">
             <section id="activity">
                 <!--Title-->
                 <h1 class="title">Activités à Marseille</h1>
@@ -257,30 +259,30 @@
                     <!--Card group left-->
                     <div class="cards-group">
                         <!--Card-->
-                        <div class="cards cards-m">
+                        <a href="#" class="cards cards-m">
                             <div id="cards-background-ml1" class="cards-bg"></div>
                             <div class="card-informations">
                                 <h2>Vieux Port</h2>
                             </div>
-                        </div>
+                        </a>
                         <!--./Card-->
                         <!--Small Card group-->
                         <div class="cards-group-lte">
                             <!--Card-->
-                            <div class="cards cards-m" id="cards-l-lite1">
+                            <a href="#" class="cards cards-m" id="cards-l-lite1">
                                 <div id="cards-background-ml2" class="cards-bg"></div>
                                 <div class="card-informations">
                                     <h2>Fort de Pomègues</h2>
                                 </div>
-                            </div>
+                            </a>
                             <!--./Card-->
                             <!--Card-->
-                            <div class="cards cards-m" id="cards-l-lite2">
+                            <a href="#" class="cards cards-m" id="cards-l-lite2">
                                 <div id="cards-background-ml3" class="cards-bg"></div>
                                 <div class="card-informations">
                                     <h2>Îles du Frioul</h2>
                                 </div>
-                            </div>
+                            </a>
                             <!--./Card-->
                         </div>
                         <!-- ./Small Card group-->
@@ -289,30 +291,30 @@
                     <!--Card group right-->
                     <div class="cards-group">
                         <!--Card-->
-                        <div class="cards cards-m">
+                        <a href="#" class="cards cards-m">
                             <div id="cards-background-mr1" class="cards-bg"></div>
                             <div class="card-informations">
-                                <h2>Vieux Port</h2>
+                                <h2>Parc National des Calanques</h2>
                             </div>
-                        </div>
+                        </a>
                         <!--./Card-->
                         <!--Small Card group-->
                         <div class="cards-group-lte">
                             <!--Card-->
-                            <div class="cards cards-m" id="cards-r-lite1">
+                            <a href="#" class="cards cards-m" id="cards-r-lite1">
                                 <div id="cards-background-mr2" class="cards-bg"></div>
                                 <div class="card-informations">
-                                    <h2>Fort de Pomègues</h2>
+                                    <h2>Notre-Dame-de-la-Garde</h2>
                                 </div>
-                            </div>
+                            </a>
                             <!--./Card-->
                             <!--Card-->
-                            <div class="cards cards-m" id="cards-r-lite2">
+                            <a href="#" class="cards cards-m" id="cards-r-lite2">
                                 <div id="cards-background-mr3" class="cards-bg"></div>
                                 <div class="card-informations">
-                                    <h2>Îles du Frioul</h2>
+                                    <h2>Parc Longchamp</h2>
                                 </div>
-                            </div>
+                            </a>
                             <!--./Card-->
                         </div>
                         <!-- ./Small Card group-->
@@ -324,35 +326,37 @@
         </section>
         <!-- ./Section Activités-->
     </main>
-    <footer class="container">
-        <!--About container-->
-        <div>
-            <p></p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- ./About container-->
-        <!-- Hebergement container-->
-        <div>
-            <p></p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- ./Hebergement container-->
-        <!-- Assistance container-->
-        <div>
-            <p></p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- ./Assistance container-->
+    <footer>
+        <section class="container">
+            <!--About container-->
+            <div>
+                <h2>A propos</h2>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <!-- ./About container-->
+            <!-- Hebergement container-->
+            <div>
+                <h2>Nos hébergements</h2>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <!-- ./Hebergement container-->
+            <!-- Assistance container-->
+            <div>
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+            <!-- ./Assistance container-->
+        </section>
     </footer>
 </body>
 
