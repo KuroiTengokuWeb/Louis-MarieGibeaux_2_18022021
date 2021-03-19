@@ -12,7 +12,6 @@
 /*
 * Font
 */
-
 @font-face {
   font-family: "Raleway";
   src: url("../font/raleway/static/Raleway-Medium.ttf") format("truetype");
@@ -99,10 +98,7 @@ nav ul li.active a {
   border-top: 1px solid var(--greylight);
   border-bottom: 1px solid var(--greylight);
   height: 50px;
-  padding-left: 17px;
-  padding-right: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding : 0 20px 0 17px;
 }
 #search-bar input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -125,18 +121,9 @@ nav ul li.active a {
   background: var(--blue);
   color: var(--white);
   height: 52px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding: 0 17px;
 }
 
-#search-bar button span {
-  display: contents;
-}
-#search-bar button i {
-  display: none;
-}
 /*
 * Filtre
 */
@@ -146,16 +133,12 @@ nav ul li.active a {
 }
 #filter-container * {
   font-weight: bold;
-  font-size: 18px;
 }
 #filter-container,
 #filter-container div {
   display: flex;
   flex-direction: row;
   flex-basis: auto;
-}
-#filter-container div {
-  margin-left: 8px;
 }
 #filter-container a {
   display: flex;
@@ -164,7 +147,6 @@ nav ul li.active a {
   border-left: none;
   align-items: center;
   border-radius: 60px;
-  margin-left: 24px;
   height: 46px;
 }
 #filter-container a:hover {
@@ -191,7 +173,6 @@ nav ul li.active a {
   padding: 5px 0px 5px 5px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-bottom: 35px;
 }
 #info i {
@@ -202,8 +183,6 @@ nav ul li.active a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
-  width: 20px;
   border: 1px solid var(--grey);
   border-radius: 80px;
   margin-right: 10px;
@@ -291,10 +270,6 @@ nav ul li.active a {
 /*
 * Activity cards
 */
-#activity {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
 #activity h2 {
   padding: 8px 0px 8px 0px;
 }
@@ -306,7 +281,6 @@ nav ul li.active a {
   width: 100%;
 }
 .cards-m {
-  height: 446px;
   width: 100%;
   flex-direction: column;
   border: none;
@@ -349,7 +323,6 @@ footer li {
 .cards-bg {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
   height: 100%;
   width: 100%;
 }
@@ -403,7 +376,7 @@ footer li {
 /* Left Side*/
 #cards-background-ml1 {
   background-image: url(../img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  background-size: 200%;
+
 }
 #cards-background-ml2 {
   background-image: url(../img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
@@ -414,7 +387,7 @@ footer li {
 /* Right Side */
 #cards-background-mr1 {
   background-image: url(../img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  background-size: 200%;
+
 }
 #cards-background-mr2 {
   background-image: url(../img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
@@ -478,6 +451,7 @@ footer li {
     padding: 0px 20px 10px 0;
     order: 2;
   }
+
   /*
   * Search bar
   */
@@ -515,7 +489,6 @@ footer li {
   }
   #filter-container div {
     flex-wrap: wrap;
-    margin-left: 0;
   }
 
   /*
@@ -626,7 +599,6 @@ footer li {
     margin-left: inherit;
     justify-content: space-between;
   }
-
   .cards-m {
     height: 446px;
   }
@@ -644,6 +616,19 @@ footer li {
   }
   .cards-group-lte {
     margin-left: 7%;
+  }
+  #cards-background-ml1,
+  #cards-background-mr1 {
+    background-size: 200%;
+  }
+  #search-bar button {
+    border-radius: 0px 14px 14px 0px;
+  }
+  #search-bar button span {
+    display: contents;
+  }
+  #search-bar button i {
+    display: none;
   }
 }
 @media (min-width: 1024px) {
@@ -689,7 +674,6 @@ footer li {
   #logo img {
     height: 40px;
   }
-
   #search {
     padding-left: 0px;
     padding-right: 0px;
@@ -697,17 +681,6 @@ footer li {
   #search p {
     padding-top: 10px;
   }
-  #search-bar button {
-    border-radius: 0px 14px 14px 0px;
-  }
-
-  #search-bar button span {
-    display: contents;
-  }
-  #search-bar button i {
-    display: none;
-  }
-
   .cards {
     margin-bottom: 30px;
   }
@@ -752,6 +725,9 @@ footer li {
   .cards-group {
     width: 49%;
   }
+  footer section > * {
+    padding-left: 0px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -759,11 +735,14 @@ footer li {
     max-width: 1280px;
   }
   .section{
-    padding:40px;
+    padding: 40px;
+  }
+  #filter-container * {
+    font-size: 18px;
   }
   #activity{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #cards-background-ml1,
   #cards-background-mr1 {
@@ -773,6 +752,7 @@ footer li {
     width: 31.4%;
   }
 }
+
 @media (min-width: 1920px) {
   .container {
     max-width: 1340px;
