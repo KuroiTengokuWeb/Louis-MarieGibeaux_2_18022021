@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang=fr>
 
 <head>
     <meta charset="utf-8">
     <title>Reservia</title>
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve.">
-    <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="asset/font/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
     <link rel="stylesheet" type="text/css" href="asset/css/main.css">
@@ -35,7 +34,7 @@
             <form method="POST" action="#">
                 <span id="search-bar">
                     <a href="#"><span><i class="fas fa-map-marker-alt"></i></span></a>
-                    <input type="text" name="" placeholder="Marseille, France">
+                    <input type="text" name="city" placeholder="Marseille, France">
                     <button type="submit">
                         <span>Rechercher</span>
                         <i class="fas fa-search"></i>
@@ -44,7 +43,6 @@
             </form>
         </div>
         <div id="filter-container">
-            <!-- Changer en filter ?-->
             <p>Filtres</p>
             <div>
                 <a href="#"><span><i class="fas fa-money-bill-wave"></i></span>Économique</a>
@@ -58,10 +56,10 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
-    <!-- ./search & filtre container-->
+    <!-- ./search & filter container-->
 
     <main class="container">
-        <section class="main-content">
+        <div class="main-content">
             <!--Section hebergements-->
             <section id="hebergements" class="section">
                 <!--Title-->
@@ -248,81 +246,79 @@
                 <!-- ./Vertical Card container-->
             </aside>
             <!-- ./Section populaires-->
-        </section>
+        </div>
         <!--Section Activités-->
         <section id="activity" class="main-content">
-            <section>
-                <!--Title-->
-                <h1 class="title">Activités à Marseille</h1>
-                <!--Card container-->
-                <div id="cards-container-m">
-                    <!--Card group left-->
-                    <div class="cards-group">
+            <!--Title-->
+            <h1 class="title">Activités à Marseille</h1>
+            <!--Card container-->
+            <div id="cards-container-m">
+                <!--Card group left-->
+                <div class="cards-group">
+                    <!--Card-->
+                    <a href="#" class="cards cards-m">
+                        <div id="cards-background-ml1" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <h2>Vieux Port</h2>
+                        </div>
+                    </a>
+                    <!--./Card-->
+                    <!--Small Card group-->
+                    <div class="cards-group-lte">
                         <!--Card-->
-                        <a href="#" class="cards cards-m">
-                            <div id="cards-background-ml1" class="cards-bg"></div>
+                        <a href="#" class="cards cards-m" id="cards-l-lite1">
+                            <div id="cards-background-ml2" class="cards-bg"></div>
                             <div class="card-informations">
-                                <h2>Vieux Port</h2>
+                                <h2>Fort de Pomègues</h2>
                             </div>
                         </a>
                         <!--./Card-->
-                        <!--Small Card group-->
-                        <div class="cards-group-lte">
-                            <!--Card-->
-                            <a href="#" class="cards cards-m" id="cards-l-lite1">
-                                <div id="cards-background-ml2" class="cards-bg"></div>
-                                <div class="card-informations">
-                                    <h2>Fort de Pomègues</h2>
-                                </div>
-                            </a>
-                            <!--./Card-->
-                            <!--Card-->
-                            <a href="#" class="cards cards-m" id="cards-l-lite2">
-                                <div id="cards-background-ml3" class="cards-bg"></div>
-                                <div class="card-informations">
-                                    <h2>Îles du Frioul</h2>
-                                </div>
-                            </a>
-                            <!--./Card-->
-                        </div>
-                        <!-- ./Small Card group-->
-                    </div>
-                    <!-- ./Card group left-->
-                    <!--Card group right-->
-                    <div class="cards-group">
                         <!--Card-->
-                        <a href="#" class="cards cards-m">
-                            <div id="cards-background-mr1" class="cards-bg"></div>
+                        <a href="#" class="cards cards-m" id="cards-l-lite2">
+                            <div id="cards-background-ml3" class="cards-bg"></div>
                             <div class="card-informations">
-                                <h2>Parc National des Calanques</h2>
+                                <h2>Îles du Frioul</h2>
                             </div>
                         </a>
                         <!--./Card-->
-                        <!--Small Card group-->
-                        <div class="cards-group-lte">
-                            <!--Card-->
-                            <a href="#" class="cards cards-m" id="cards-r-lite1">
-                                <div id="cards-background-mr2" class="cards-bg"></div>
-                                <div class="card-informations">
-                                    <h2>Notre-Dame-de-la-Garde</h2>
-                                </div>
-                            </a>
-                            <!--./Card-->
-                            <!--Card-->
-                            <a href="#" class="cards cards-m" id="cards-r-lite2">
-                                <div id="cards-background-mr3" class="cards-bg"></div>
-                                <div class="card-informations">
-                                    <h2>Parc Longchamp</h2>
-                                </div>
-                            </a>
-                            <!--./Card-->
-                        </div>
-                        <!-- ./Small Card group-->
                     </div>
-                    <!-- ./Card group right-->
+                    <!-- ./Small Card group-->
                 </div>
-                <!-- ./Card container-->
-            </section>
+                <!-- ./Card group left-->
+                <!--Card group right-->
+                <div class="cards-group">
+                    <!--Card-->
+                    <a href="#" class="cards cards-m">
+                        <div id="cards-background-mr1" class="cards-bg"></div>
+                        <div class="card-informations">
+                            <h2>Parc National des Calanques</h2>
+                        </div>
+                    </a>
+                    <!--./Card-->
+                    <!--Small Card group-->
+                    <div class="cards-group-lte">
+                        <!--Card-->
+                        <a href="#" class="cards cards-m" id="cards-r-lite1">
+                            <div id="cards-background-mr2" class="cards-bg"></div>
+                            <div class="card-informations">
+                                <h2>Notre-Dame-de-la-Garde</h2>
+                            </div>
+                        </a>
+                        <!--./Card-->
+                        <!--Card-->
+                        <a href="#" class="cards cards-m" id="cards-r-lite2">
+                            <div id="cards-background-mr3" class="cards-bg"></div>
+                            <div class="card-informations">
+                                <h2>Parc Longchamp</h2>
+                            </div>
+                        </a>
+                        <!--./Card-->
+                    </div>
+                    <!-- ./Small Card group-->
+                </div>
+                <!-- ./Card group right-->
+            </div>
+            <!-- ./Card container-->
         </section>
         <!-- ./Section Activités-->
     </main>
