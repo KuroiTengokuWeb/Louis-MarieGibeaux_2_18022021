@@ -66,7 +66,6 @@ nav ul li.active a {
 }
 #search-bar * {
   font-weight: bold;
-  font-size: 17px;
 }
 #search-bar a {
   display: flex;
@@ -446,6 +445,9 @@ footer li {
     padding-left: 20px;
     padding-right: 20px;
   }
+  #search-bar * {
+    font-size: 14px;
+  }
   #search p {
     padding-top: 16px;
     padding-bottom: 40px;
@@ -571,6 +573,11 @@ footer li {
   }
 }
 
+@media (min-width: 375px){
+  #search-bar * {
+    font-size: 17px;
+  }
+}
 @media (min-width: 480px) {
   .cards-h {
     width: 45%;
